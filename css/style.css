@@ -2,11 +2,11 @@
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 body {
   margin: 0;
-  font-family: var(--font-main);
+  font-family: 'Kiwi Maru', serif;
   color: var(--color-text);
   background: var(--color-bg) var(--bg-pattern);
   background-size: 120px 120px;
-  animation: drift 40s linear infinite;
+  animation: drift 15s linear infinite;
   line-height: 1.7;
   -webkit-text-size-adjust: 100%;
 }
