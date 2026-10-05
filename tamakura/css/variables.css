@@ -1,0 +1,34 @@
+/* ===== サイト全体の設定値（ここだけ変えればOK） ===== */
+
+/* フォントを用意したらここで読み込み
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/MyFont.woff2") format("woff2");
+  font-display: swap;
+}
+*/
+
+:root {
+  /* ▼ フォント定義はここ1か所のみ。全要素に反映されます */
+  --font-main: "MyFont", "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
+
+  /* 色 */
+  --color-text:   #8a6a68;
+  --color-accent: #8a6a68;
+  --color-border: #fcd9e4;
+  --color-bg:     #fffafc;
+  --color-tile:   #fff0f5;
+  --color-white:  #ffffff;
+  --color-ph:     #dcdcdc; /* 画像プレースホルダー */
+
+  /* サイズ */
+  --content-width: 560px;
+  --radius: 4px;
+
+  /* 背景のチェック柄（タイル色は --color-tile と同じ #fff0f5） */
+  --bg-pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect x='4' y='4' width='52' height='52' rx='14' fill='%23fff0f5'/%3E%3Crect x='64' y='64' width='52' height='52' rx='14' fill='%23fff0f5'/%3E%3C/svg%3E");
+}
+
+/* PC・タブレットでは本文幅を広げる */
+@media (min-width: 768px)  { :root { --content-width: 760px; } }
+@media (min-width: 1100px) { :root { --content-width: 940px; } }

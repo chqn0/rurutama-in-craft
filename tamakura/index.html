@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>たまくら | ぽかぽかたまごフェスティバル</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <!-- ロゴ画像: images/logo.png を置くと表示されます -->
+    <h1 class="logo"><img src="images/logo.png" alt="たまくら Rurutama in Craft" onerror="this.replaceWith(document.createTextNode('たまくら'))"></h1>
+    <nav class="nav" id="nav">
+      <a href="#news">お知らせ</a>
+      <a href="#schedule">スケジュール</a>
+      <a href="#goods">チケット<br>グッズ</a>
+      <a href="#members">参加メンバー</a>
+      <a href="#contact">ご質問</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="intro reveal">
+      <h2 class="title">ぽかぽかたまごフェスティバル</h2>
+      <p class="lead">皆の想いをひとつにして作り上げたオリジナルワールドへ！<br>完成した特別なワールドへ、期間限定で皆様をご招待するオンラインイベント✨<br>探索や撮影、交流を楽しみながら、このイベントだけの世界を体験してもらう。</p>
+    </section>
+
+    <section id="news" class="reveal">
+      <h2 class="title">お知らせ</h2>
+      <div class="box news">
+        <ul class="news-list" id="newsList">
+          <li><time>2026/10/29</time><span>たましろるる爆誕</span></li>
+          <li><time>2026/09/20</time><span>てきすとてきすとてきすとてきすとてきすとてきすとてきすと</span></li>
+          <li><time>2026/09/18</time><span>ちゃんおはうまれた</span></li>
+          <li><time>2026/09/05</time><span>てきすとてきすとてきすとてきすとてきすとてきすとてきすと</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="intro reveal">
+      <h2 class="title">るるたま・いん・くらふと</h2>
+      <p class="lead">冬に向けた大型企画！12月に開催のオンラインイベントに向けて<br>オリジナルワールド「たまごあいらんど」を一から作り上げていきます。<br>建築勢様の力をかり、リスナーさんやお友達と一緒にアイデアを出し合いながら<br>“世界づくりそのもの”を楽しむ参加型プロジェクトです！</p>
+    </section>
+
+    <section id="schedule" class="reveal">
+      <h2 class="title">スケジュール</h2>
+      <div class="schedule">
+        <div class="box month"><h3>10月</h3><!-- 予定をここに追加 --></div>
+        <div class="box month"><h3>11月</h3></div>
+        <div class="box month"><h3>12月</h3></div>
+      </div>
+    </section>
+
+    <section id="goods" class="reveal">
+      <h2 class="title">チケット・グッズ</h2>
+      <a class="box wide-btn" href="#">サーバー内ルール（チケットご購入前にご一読ください）</a>
+      <div class="tickets">
+        <a class="box ticket" href="#">握手会チケット<br>12/XX</a>
+        <a class="box ticket" href="#">握手会チケット<br>12/XX</a>
+        <a class="box ticket" href="#">握手会チケット<br>12/XX</a>
+      </div>
+      <a class="box wide-btn" href="#">サーバー利用料</a>
+
+      <div class="box slider" id="slider" aria-label="グッズスライドショー">
+        <div class="slides">
+          <!-- 各 .slide に <img src="images/goods01.png" alt="商品名"> を入れてください -->
+          <div class="slide">グッズスライドショー</div>
+          <div class="slide">グッズ 2</div>
+          <div class="slide">グッズ 3</div>
+        </div>
+        <button class="arrow prev" aria-label="前へ">&laquo;</button>
+        <button class="arrow next" aria-label="次へ">&raquo;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section id="members" class="reveal">
+      <h2 class="title">企画に協力いただいたお友達</h2>
+      <ul class="members">
+        <!-- images/member01.png ... を置くと円内に表示されます -->
+        <li><div class="avatar"><img src="images/member01.png" alt="" onerror="this.remove()"></div>ハムタロサン</li>
+        <li><div class="avatar"><img src="images/member02.png" alt="" onerror="this.remove()"></div>ハムタロサン</li>
+        <li><div class="avatar"><img src="images/member03.png" alt="" onerror="this.remove()"></div>ハムタロサン</li>
+        <li><div class="avatar"><img src="images/member04.png" alt="" onerror="this.remove()"></div>ハムタロサン</li>
+        <li><div class="avatar"><img src="images/member05.png" alt="" onerror="this.remove()"></div>ハムタロサン</li>
+        <li><div class="avatar"><img src="images/member06.png" alt="" onerror="this.remove()"></div>ハムタロサン</li>
+        <li><div class="avatar"><img src="images/member07.png" alt="" onerror="this.remove()"></div>ハムタロサン</li>
+        <li><div class="avatar"><img src="images/member08.png" alt="" onerror="this.remove()"></div>ハムタロサン</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="reveal">
+      <form class="box form" id="contactForm" novalidate>
+        <p class="form-title">ご質問はコチラ</p>
+        <label for="name">お名前</label>
+        <input id="name" name="name" type="text" required>
+        <label for="message">内容</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit" class="submit">質問</button>
+        <p class="form-msg" id="formMsg" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer"></footer>
+  <button class="to-top" id="toTop" type="button" aria-label="ページの一番上へ戻る"><span>↑</span>TOP</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
