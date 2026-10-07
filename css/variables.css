@@ -31,4 +31,4 @@
 
 /* PC・タブレットでは本文幅を広げる */
 @media (min-width: 768px)  { :root { --content-width: 760px; } }
-@media (min-width: 1100px) { :root { --content-width: 940px; } }
+@media (min-width: 1100px) { :root { --content-width: 1100px; } }

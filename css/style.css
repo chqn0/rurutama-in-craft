@@ -25,7 +25,7 @@ button, input, textarea { font-family: inherit; color: inherit; }
 .nav a {
   flex: 1; display: flex; align-items: center; justify-content: center;
   min-height: 52px; padding: 4px 2px;
-  font-size: clamp(.62rem, 2.6vw, .95rem); line-height: 1.25;
+  font-size: clamp(.62rem, 2.6vw, .7rem); line-height: 1.25;
   background: var(--color-white); border: 2px solid var(--color-border); border-radius: 16px;
   transition: transform .2s, background .2s;
 }
@@ -50,7 +50,7 @@ section { margin-top: 44px; }
 }
 .news-list li + li { margin-top: 6px; }
 .news-list time { flex: none; }
-.news-list span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.news-list span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; text-decoration: underline;}
 
 /* ---------- schedule ---------- */
 .schedule { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4.5%; }
@@ -62,7 +62,7 @@ section { margin-top: 44px; }
 .wide-btn:active, .ticket:active { background: var(--color-tile); }
 .tickets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4.5%; margin-bottom: 16px; }
 .ticket {
-  padding: 10px 12px; font-size: .78rem; line-height: 1.4; min-height: 70px;
+  padding: 10px 12px; font-size: .78rem; line-height: 1.4; min-height: 90px;
   background-image: linear-gradient(var(--color-border) 50%, transparent 0);
   background-size: 2px 8px; background-repeat: repeat-y; background-position: 82% 0;
   background-color: var(--color-white);
