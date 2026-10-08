@@ -35,7 +35,7 @@ button, input, textarea { font-family: inherit; color: inherit; }
 /* ---------- common ---------- */
 .container { max-width: var(--content-width); margin: 0 auto; padding: 0 5% 60px; }
 section { margin-top: 44px; }
-.title { margin: 0 0 14px; font-size: 1.3rem; font-weight: 400; text-align: center; letter-spacing: .05em; }
+.title { margin: 0 0 20px; font-size: 1.3rem; font-weight: 400; text-align: center; letter-spacing: .05em; }
 .lead { margin: 0; font-size: .82rem; text-align: center; line-height: 1.9; }
 .box { background: var(--color-white); border: 2px solid var(--color-border); border-radius: var(--radius); }
 
@@ -56,6 +56,7 @@ section { margin-top: 44px; }
 .schedule { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4.5%; }
 .month { min-height: 360px; padding: 2px 6px; }
 .month h3 { margin: 0; font-weight: 400; font-size: 1.15rem; }
+.month span { font-size: .7rem; }
 
 /* ---------- tickets / goods ---------- */
 .wide-btn { display: block; padding: 8px 10px; margin: 0 0 16px; text-align: center; font-size: .78rem; transition: background .2s; }

@@ -19,7 +19,7 @@
   --color-bg:     #fffafc;
   --color-tile:   #fff0f5;
   --color-white:  #ffffff;
-  --color-ph:     #dcdcdc; /* 画像プレースホルダー */
+  --color-ph:     #ffffff; /* 画像プレースホルダー */
 
   /* サイズ */
   --content-width: 560px;
