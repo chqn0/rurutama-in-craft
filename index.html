@@ -16,7 +16,7 @@
       <a href="#schedule">スケジュール</a>
       <a href="#goods">チケット<br>グッズ</a>
       <a href="#members">参加メンバー</a>
-      <a href="#contact">ご質問</a>
+      <a href="#contact">お問合せ</a>
     </nav>
   </header>
 
@@ -28,47 +28,16 @@
 
     <section id="news" class="reveal">
       <h2 class="title">お知らせ</h2>
-      <div class="box news">
-        <ul class="news-list" id="newsList">
-          <li>
-            <time>2026/10/12</time>
-            <span>
-              <a href="https://x.com/shir0_r/status/2109601564491137452?s=46&t=kWTrYPJTlMG8M75gaw0bpA">たまくらコラボ月間☆彡</a>
-            </span>
-          </li>
-          <li>
-            <time>2026/10/12</time>
-            <span>
-              <a href="https://x.com/shir0_r/status/2109590786593743312?s=46&t=kWTrYPJTlMG8M75gaw0bpA">たまくらクレジット公開！（追加メンバー）</a>
-            </span>
-          </li>
-          <li>
-            <time>2026/10/04</time>
-            <span>
-              <a href="https://x.com/shir0_R/status/2106685762733592794?s=20">情報先行公開！</a>
-            </span>
-          </li>
-          <li>
-            <time>2026/09/24</time>
-            <span>
-              <a href="https://x.com/shir0_R/status/2103102049630261600?s=20">たまくらクレジット公開～</a>
-            </span>
-          </li>
-          <!-- archive
-            <li>
-            <time>2026/09/24</time>
-            <span>
-              <a href="https://x.com/shir0_R/status/2103100135656059344?s=20">建築チーム協力者募集.ᐟ</a>
-            </span>
-          </li>
-          <li>
-            <time>2026/09/24</time>
-            <span>
-              <a href="https://x.com/shir0_R/status/2103099861415641173?s=20">マップ初期案公開.ᐟ</a>
-            </span>
-          </li>
-         -->
-        </ul>
+      <div class="box slider" id="slider" aria-label="お知らせスライドショー">
+        <div class="slides">
+          <!-- 各 .slide に <img src="images/goods01.png" alt="商品名"> を入れてください -->
+          <div class="slide"><a href=#><img src="images/goods/サーバー利用料①.png" alt="サーバー利用料①"></a></div>
+          <div class="slide"><a href=#><img src="images/goods/サーバー利用料①.png" alt="サーバー利用料①"></a></div>
+          <div class="slide"><a href=#><img src="images/goods/サーバー利用料①.png" alt="サーバー利用料①"></a></div>
+        </div>
+        <button class="arrow prev" aria-label="前へ"><</button>
+        <button class="arrow next" aria-label="次へ">></button>
+        <div class="dots"></div>
       </div>
     </section>
 
@@ -474,15 +443,15 @@
     </section>
 
     <section id="contact" class="reveal">
-      <form class="box form" id="contactForm" novalidate>
-        <p class="form-title">ご質問はコチラ</p>
-        <label for="name">お名前</label>
-        <input id="name" name="name" type="text" required>
-        <label for="message">内容</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit" class="submit">質問</button>
-        <p class="form-msg" id="formMsg" role="status"></p>
-      </form>
+      <div class="form-wrapper">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfbpApB9bFwynjFTvFhGnuKgrgiLziJi6YhDEJ3tlQI5gf0_g/viewform?embedded=true"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          loading="lazy"
+        >読み込んでいます…</iframe>
+      </div>
     </section>
   </main>
 
