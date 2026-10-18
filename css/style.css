@@ -35,7 +35,7 @@ button, input, textarea { font-family: inherit; color: inherit; }
 /* ---------- common ---------- */
 .container { max-width: var(--content-width); margin: 0 auto; padding: 0 5% 60px; }
 section { margin-top: 44px; }
-.title { margin: 0 0 20px; font-size: 1.3rem; font-weight: 400; text-align: center; letter-spacing: .05em; }
+.title { margin: 20px 0 20px; font-size: 1.3rem; font-weight: 400; text-align: center; letter-spacing: .05em; }
 .lead { margin: 0; font-size: .82rem; text-align: center; line-height: 1.9; }
 .box { background: var(--color-white); border: 2px solid var(--color-border); border-radius: var(--radius); }
 
@@ -44,9 +44,15 @@ section { margin-top: 44px; }
 
 /* ---------- schedule ---------- */
 .schedule { grid-template-columns: 1fr; gap: 20px; margin-bottom: 16px; }
-.month { min-height: 360px; padding: 2px 6px; margin: 20px;}
+.month { min-height: 360px; padding: 2px 6px; margin-bottom: 20px; }
 .month h3 { margin: 0; font-weight: 400; font-size: 1.15rem; }
 .month span { font-size: .7rem; }
+
+/* ---------- information ---------- */
+.infoslider { position: relative; margin-top: 16px; height: 320px; overflow: hidden; touch-action: pan-y; }
+.infoslide { flex: 0 0 100%; display: flex; align-items: center; justify-content: center; font-size: .8rem; }
+.infoslide a { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+.infoslide img { width: 100%; height: 100%; object-fit: contain; }
 
 /* ---------- tickets / goods ---------- */
 .wide-btn { display: block; padding: 8px 10px; margin: 0 0 16px; text-align: center; font-size: .78rem; transition: background .2s; }
@@ -58,10 +64,7 @@ section { margin-top: 44px; }
   background-size: 2px 8px; background-repeat: repeat-y; background-position: 82% 0;
   background-color: var(--color-white);
 }
-.slider { position: relative; margin-top: 16px; height: 260px; overflow: hidden; touch-action: pan-y; }
 .slides { display: flex; height: 100%; transition: transform .5s ease; }
-.slide { flex: 0 0 100%; display: flex; align-items: center; justify-content: center; font-size: .8rem; }
-.slide img { width: 100%; height: 100%; object-fit: contain; }
 .arrow {
   position: absolute; top: 50%; transform: translateY(-50%);
   background: none; border: 0; font-size: 2.6rem; font-weight: 700; line-height: 1;
@@ -108,6 +111,86 @@ section { margin-top: 44px; }
 .to-top:active { transform: scale(.9); }
 .to-top:focus-visible { outline: 3px solid var(--color-border); outline-offset: 2px; }
 
+/* ---------- 画像拡大表示 ---------- */
+.tmb {
+  width: 100%;
+  align-items: center;
+}
+.tmb_img {
+  width: 100%;
+  height: auto;
+}
+.tmb_img:hover {
+  cursor: pointer;
+}
+.popup {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0s 0.3s;
+}
+.popup__btn {
+  display: block;
+  z-index: 13;
+  position: absolute;
+  top: 1vh;
+  right: 1vh;
+  width: 5vh;
+  height: 5vh;
+  cursor: pointer;
+}
+.popup__btn::before,
+.popup__btn::after {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  margin-top: -1px;
+  background-color: #fff;
+  content: '';
+}
+.popup__btn::before {
+  transform: rotate(45deg);
+}
+.popup__btn::after {
+  transform: rotate(-45deg);
+}
+.popup__btnarea {
+  z-index: 12;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.popup__img {
+  z-index: 11;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+.popup__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked ~ .popup {
+  transform: scale(1);
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
 /* ---------- タブレット / PC ---------- */
 @media (min-width: 768px) {
   html { font-size: 17px; }
@@ -116,7 +199,7 @@ section { margin-top: 44px; }
   .nav a { min-height: 60px; font-size: 1rem; }
   .news { padding: 36px 32px; }
   .month { min-height: 420px; }
-  .slider { height: 340px; }
+  .infoslider { height: 510px; }
   .to-top { right: 24px; bottom: 24px; width: 60px; height: 60px; }
   .schedule { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4.5%; }
 }

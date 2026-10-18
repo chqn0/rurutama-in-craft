@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>たまくら | ぽかぽかたまごフェスティバル</title>
+  <link rel="icon" href="images/pokatamaLogo.png" type="image/png">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
       <a href="#schedule">スケジュール</a>
       <a href="#goods">チケット<br>グッズ</a>
       <a href="#members">参加メンバー</a>
-      <a href="#contact">お問合せ</a>
+      <a href="#contact">問合せ</a>
     </nav>
   </header>
 
@@ -28,15 +29,15 @@
 
     <section id="news" class="reveal">
       <h2 class="title">お知らせ</h2>
-      <div class="box slider" id="slider" aria-label="お知らせスライドショー">
-        <div class="slides">
+        <div class="box infoslider js-slider" aria-label="お知らせスライドショー">
+          <div class="slides">
           <!-- 各 .slide に <img src="images/goods01.png" alt="商品名"> を入れてください -->
-          <div class="slide"><a href=#><img src="images/goods/サーバー利用料①.png" alt="サーバー利用料①"></a></div>
-          <div class="slide"><a href=#><img src="images/goods/サーバー利用料①.png" alt="サーバー利用料①"></a></div>
-          <div class="slide"><a href=#><img src="images/goods/サーバー利用料①.png" alt="サーバー利用料①"></a></div>
+          <div class="infoslide"><a href=https://www.youtube.com/live/NMtlZ3vzawU?si=XEMhHlaF9U02rEJE><img src="images/tamacramov2.jpg" alt="サーバー利用料①"></a></div>
+          <div class="infoslide"><a href=#><img src="images/goods/サーバー利用料①.png" alt="サーバー利用料①"></a></div>
+          <div class="infoslide"><a href=#><img src="images/goods/サーバー利用料①.png" alt="サーバー利用料①"></a></div>
         </div>
-        <button class="arrow prev" aria-label="前へ"><</button>
-        <button class="arrow next" aria-label="次へ">></button>
+        <button class="arrow prev" aria-label="前へ">&lt;</button>
+        <button class="arrow next" aria-label="次へ">&gt;</button>
         <div class="dots"></div>
       </div>
     </section>
@@ -45,8 +46,25 @@
       <h2 class="logo"><img src="images/tamacraLogo.png" alt="るるたま・いん・くらふと" onerror="this.replaceWith(document.createTextNode('るるたま・いん・くらふと'))"></h2>
       <h2 class="title">るるたま・いん・くらふと</h2>
       <p class="lead">冬に向けた大型企画！12月に開催のオンラインイベントに向けて<br>オリジナルワールド「たまごあいらんど」を一から作り上げていきます。<br>建築勢様の力をかり、リスナーさんやお友達と一緒にアイデアを出し合いながら<br>“世界づくりそのもの”を楽しむ参加型プロジェクトです！</p>
-    </section>
-
+      <h2 class="title">たまごあいらんど - マップ</h2>
+      <div class="tmb">
+        <label for="pop-01">
+          <img src="images/map.png" alt="image_01" class="tmb_img">
+        </label>
+        <input type="checkbox" value="" id="pop-01">
+        <div class="popup">
+          <label for="pop-01" class="popup__btn"></label>
+          <label for="pop-01" class="popup__btnarea"></label>
+          <div class="popup__img">
+            <img src="images/map.png" alt="image_01">
+          </div>
+        </div>
+      </div>
+      <h2 class="title">たまくら - 企画概要</h2>
+      <p class="lead">（Youtubeへ遷移します）</p>
+      <a href="https://www.youtube.com/live/M-zu5wydE7w?si=YSMEFsJd7YN7ytyE">
+        <img src="images/tamacramov.jpg" alt="企画のお知らせ" class="movie" width="100%">
+      </a>
     <section id="schedule" class="reveal">
       <h2 class="title">スケジュール</h2>
       <p class="lead">イベント：🥚／コラボ予定：🐹</p>
@@ -94,23 +112,23 @@
 
     <section id="goods" class="reveal">
       <h2 class="title">チケット・グッズ</h2>
-      <a class="box wide-btn" href="sources/rules.html">サーバー内ルール（チケットご購入前にご一読ください）</a>
+      <!-- <a class="box wide-btn" href="sources/rules.html">サーバー内ルール（チケットご購入前にご一読ください）</a>
       <div class="tickets">
         <a class="box ticket" href="#">握手会チケット<br>12/13</a>
         <a class="box ticket" href="#">握手会チケット<br>12/18</a>
         <a class="box ticket" href="#">握手会チケット<br>12/19</a>
       </div>
-      <a class="box wide-btn" href="#">サーバー利用料</a>
-
-      <div class="box slider" id="slider" aria-label="グッズスライドショー">
+      <a class="box wide-btn" href="#">サーバー利用料</a> -->
+      <div class="box infoslider js-slider" aria-label="グッズスライドショー">
         <div class="slides">
           <!-- 各 .slide に <img src="images/goods01.png" alt="商品名"> を入れてください -->
-          <div class="slide">グッズスライドショー</div>
-          <div class="slide">グッズ 2</div>
-          <div class="slide">グッズ 3</div>
+          <div class="infoslide"><a href="#"><img src="images/goods/トレカ _ クローバー.png" alt="トレカ _ クローバー"></a></div>
+          <div class="infoslide"><a href="#"><img src="images/goods/トレカ _ ハート.png" alt="トレカ _ ハート"></a></div>
+          <div class="infoslide"><a href="#"><img src="images/goods/トレカ _ スペード.png" alt="トレカ _ スペード"></a></div>
+          <div class="infoslide"><a href="#"><img src="images/goods/トレカ _ ダイヤ.png" alt="トレカ _ ダイヤ"></a></div>
         </div>
-        <button class="arrow prev" aria-label="前へ"><</button>
-        <button class="arrow next" aria-label="次へ">></button>
+        <button class="arrow prev" aria-label="前へ">&lt;</button>
+        <button class="arrow next" aria-label="次へ">&gt;</button>
         <div class="dots"></div>
       </div>
     </section>
