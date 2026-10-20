@@ -55,7 +55,7 @@ section { margin-top: 44px; }
 .infoslide img { width: 100%; height: 100%; object-fit: contain; }
 
 /* ---------- tickets / goods ---------- */
-.wide-btn { display: block; padding: 8px 10px; margin: 0 0 16px; text-align: center; font-size: .78rem; transition: background .2s; }
+.wide-btn { display: block; padding: 8px 10px; margin: 0 0 16px; text-align: center; font-size: .78rem; transition: background .2s; margin: 10px 0;}
 .wide-btn:active, .ticket:active { background: var(--color-tile); }
 .tickets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4.5%; margin-bottom: 16px; }
 .ticket {
